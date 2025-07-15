@@ -12,4 +12,4 @@ intents.message_content = True
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 client = MyClient(intents=intents)
-client.run('DISCORD_TOKEN')
+client.run(TOKEN)
