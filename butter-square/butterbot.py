@@ -9,6 +9,7 @@ class MyClient(discord.Client):
 intents = discord.Intents.default()
 intents.message_content = True
 
+load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 client = MyClient(intents=intents)
